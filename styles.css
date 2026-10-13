@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alineación vertical: el título arriba y el cuadro abajo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Apila los elementos uno debajo de otro */
+    align-items: center;     /* Centra horizontalmente el título y el cuadro */
+    padding: 20px;
+}
+
+/* Encabezado superior centrado */
+.header-top {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px; /* Distancia entre el título y el cuadro del contador */
+}
+
+.header-top h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Cuadro principal del contador */
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 35px 40px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* Valor gigante en el centro */
+#valor-contador {
+    font-size: 64px;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+/* Grupo de botones */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+#btn-reiniciar {
+    background-color: #64748b;
+}
+
+button:hover {
+    opacity: 0.9;
+}
