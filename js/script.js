@@ -15,15 +15,12 @@ btnSumar.addEventListener('click', function() {
 });
 
 // 4. Evento para restar -1
-if(numero>=0){
+
 btnRestar.addEventListener('click', function() {
     numero = numero - 1;
     pantalla.textContent = numero;
 });
-};
-else{
-    console.log(numero);
-}
+
 // 5. Evento para reiniciar a 0
 btnReiniciar.addEventListener('click', function() {
     numero = 0;
